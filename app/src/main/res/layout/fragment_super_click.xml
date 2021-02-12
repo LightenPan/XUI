@@ -28,8 +28,12 @@
                     app:sLeftTextString="左中文字"
                     app:sLeftTopTextString="左上"
                     app:sRightBottomTextString="右下"
-                    app:sRightTextString="右中"
-                    app:sRightTopTextString="右上" />
+                    app:sRightMaxEms="40"
+                    app:sRightLines="2"
+                    app:sRightTextString="右右中右中右中右中右中右中右中右中右中右中右中右中右中右中右中右中右中右中右中右中右中中"
+                    app:sRightTopTextString="右上"
+                    app:sUseCenter="false"
+                    />
 
                 <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
                     android:id="@+id/super_cb_tv"

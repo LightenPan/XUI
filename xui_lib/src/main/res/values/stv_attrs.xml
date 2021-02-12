@@ -228,6 +228,10 @@
 
         <!--是否使用shape设置圆角及触摸反馈 设为true之后才能使用以下属性-->
         <attr name="sUseShape" format="boolean" />
+
+        <!--是否使用中间文字 设为true之后才能使用以下属性-->
+        <attr name="sUseCenter" format="boolean" />
+
         <!--  填充色-->
 
         <attr name="sShapeSolidColor" format="color" />

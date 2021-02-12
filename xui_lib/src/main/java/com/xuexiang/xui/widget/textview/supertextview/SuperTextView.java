@@ -366,6 +366,7 @@ public class SuperTextView extends RelativeLayout implements HasTypeface {
     private float mStrokeDashGap;
 
     private boolean mUseShape;
+    private boolean mUseCenter;
 
     private GradientDrawable mGradientDrawable;
 
@@ -603,6 +604,7 @@ public class SuperTextView extends RelativeLayout implements HasTypeface {
         mStrokeColor = typedArray.getColor(R.styleable.SuperTextView_sShapeStrokeColor, mDefaultShapeColor);
 
         mUseShape = typedArray.getBoolean(R.styleable.SuperTextView_sUseShape, false);
+        mUseCenter = typedArray.getBoolean(R.styleable.SuperTextView_sUseCenter, false);
 
         typedArray.recycle();
     }
@@ -634,7 +636,9 @@ public class SuperTextView extends RelativeLayout implements HasTypeface {
         initRightIcon();
 
         initLeftTextView();
-        initCenterTextView();
+        if (mUseCenter) {
+            initCenterTextView();
+        }
         initRightTextView();
 
         initDividerLineView();
